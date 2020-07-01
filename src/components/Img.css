@@ -1,0 +1,11 @@
+
+.launchLogo{
+    width: 270px;
+    height: 350px;
+    margin: 10px;
+}
+.launchBorder{
+    border:3px solid white;
+    align-self: flex-start;
+    
+}

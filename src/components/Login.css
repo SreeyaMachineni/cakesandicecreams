@@ -1,0 +1,17 @@
+.formTitle{
+    padding-bottom: 30px;
+}
+.inputStyle{
+    border: 0px;
+    outline: 0px;
+    border-bottom: 2px solid black;
+    background-color:transparent;
+}
+.pinkBtn{
+    background-color: rgba(255, 0, 119, 0.425);
+    border: 0
+}
+.smallFont{
+    font-size: 12px;
+    padding-top: 10px;
+}

@@ -1,0 +1,19 @@
+
+
+.formTitle{
+    font-family: Gabriola;
+    font-size: 30px;
+    font-weight: bold
+}
+
+.imgForm{
+    display: flex;
+    justify-content: space-evenly;
+    
+    padding: 20px;
+    
+    
+}
+
+
+
