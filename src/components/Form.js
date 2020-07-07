@@ -1,9 +1,9 @@
 import React from 'react'
 import './Form.css'
-import Title from './Title'
-import Img from './Img'
+import Title from '../containers/Title'
+import Img from '../containers/Img'
 import Login from './Login'
-import Nav from './Nav'
+import Nav from '../containers/Nav'
 
 class Form extends React.Component{
     constructor(props){

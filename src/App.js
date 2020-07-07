@@ -5,23 +5,21 @@ import { withRouter } from 'react-router'
 import Form from './components/Form'
 import Register from './components/Register'
 import Login from './components/Login'
-import Nav from './components/Nav'
+import Nav from './containers/Nav'
 import Home from './components/Home'
 import './App.css'
 
-
-
-import {createStore,applyMiddleware,compose} from 'redux';
+import {createStore,applyMiddleware} from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import {Provider} from 'react-redux';
-import {reducer} from './components/middleware/redux'
-import {watchFetchDog} from './components/middleware/sagas'
+import reducer from './middleware/redux'
+import rootSaga from './middleware/sagas'
 
 const sagaMiddleware = createSagaMiddleware();
 
 let store = createStore(reducer,applyMiddleware(sagaMiddleware));
 
-sagaMiddleware.run(watchFetchDog)
+sagaMiddleware.run(rootSaga)
 
 const Main = withRouter(({location})=>{
   return(
